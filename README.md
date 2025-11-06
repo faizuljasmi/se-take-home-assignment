@@ -8,23 +8,23 @@ This is a Node.js CLI application that implements a McDonald's order management 
 
 ### Core Components
 
-1. **Order Model** (`src/models/Order.js`)
+1. **Order Model** (`src/models/order.js`)
    - Represents a customer order (Normal or VIP)
    - Tracks order status (PENDING, PROCESSING, COMPLETE)
    - Manages order lifecycle and timing
 
-2. **Bot Model** (`src/models/Bot.js`)
+2. **Bot Model** (`src/models/bot.js`)
    - Represents a cooking bot that processes orders
    - Handles order processing with 10-second timeout
    - Manages bot state (IDLE, PROCESSING)
 
-3. **OrderController** (`src/OrderController.js`)
+3. **OrderController** (`src/orderController.js`)
    - Main controller managing orders and bots
    - Handles bot lifecycle (add/remove)
    - Automatically assigns orders to idle bots
    - Delegates queue management to OrderQueue service
 
-4. **OrderQueue Service** (`src/services/OrderQueue.js`)
+4. **OrderQueue Service** (`src/services/orderQueue.js`)
    - Manages priority queue for pending orders
    - Handles VIP order prioritization logic
    - Encapsulates queue operations (enqueue, dequeue, size, isEmpty)
