@@ -170,14 +170,14 @@ node test.js
 .
 ├── src/
 │   ├── models/
-│   │   ├── Order.js          # Order model
-│   │   └── Bot.js            # Bot model
+│   │   ├── order.js          # Order model
+│   │   └── bot.js            # Bot model
 │   ├── services/
-│   │   └── OrderQueue.js     # Priority queue service
+│   │   └── orderQueue.js     # Priority queue service
 │   ├── utils/
 │   │   └── timeFormatter.js  # Time formatting utilities
 │   ├── constants.js          # Application constants
-│   ├── OrderController.js    # Main controller
+│   ├── orderController.js    # Main controller
 │   ├── index.js              # CLI entry point (simulation mode)
 │   └── interactive.js        # Interactive mode (optional)
 ├── scripts/
